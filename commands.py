@@ -31,7 +31,7 @@ async def get_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
         pol_2 = update.message.text
         value = 2
     elif value == 2:
-        await update.message.reply_photo('1.jpg')
+        await update.message.reply_text('Отлично, можно нчинать')
         time.sleep(1)
         pol_1 = update.message.text
         await update.message.reply_text(polinom.polinom(pol_1, pol_2))
